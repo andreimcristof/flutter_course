@@ -10,10 +10,7 @@ class AuthPage extends StatelessWidget {
           color: Theme.of(context).accentColor,
           child: Text('Login'),
           onPressed: () {
-            Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                    builder: (BuildContext context) => ProductsPage()));
+            Navigator.pushReplacementNamed(context, '/');
           },
         )),
         appBar: AppBar(title: Text('Please authenticate')));
